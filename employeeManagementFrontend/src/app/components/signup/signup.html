@@ -1,0 +1,59 @@
+<app-navbar></app-navbar>
+<div class="signup-container">
+  <div class="signup-card">
+    <h2>Create Account</h2>
+    <p>Please fill the form to register</p>
+
+    <form (ngSubmit)="signup()">
+
+  <div class="form-group">
+    <input
+      type="text"
+      placeholder="Employee Name"
+      required
+      [(ngModel)]="employee.ename"
+      name="name"
+    />
+  </div>
+
+  <div class="form-group">
+    <input
+      type="email"
+      placeholder="Employee Email"
+      required
+      [(ngModel)]="employee.eemail"
+      name="email"
+    />
+  </div>
+
+  <div class="form-group">
+    <input
+      type="password"
+      placeholder="New Password"
+      required
+      [(ngModel)]="employee.epassword"
+      name="password"
+    />
+  </div>
+
+  <div class="form-group">
+    <input
+      type="text"
+      placeholder="Role"
+      required
+      [(ngModel)]="employee.role"
+      name="role"
+    />
+  </div>
+
+  <button type="submit" class="signup-btn">Signup</button>
+</form>
+
+
+    <p class="login-text">
+      Already have an account?
+      <a routerLink="/login">Login</a>
+    </p>
+  </div>
+</div>
+

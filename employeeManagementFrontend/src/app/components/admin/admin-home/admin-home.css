@@ -1,0 +1,46 @@
+
+
+
+
+
+/* Admin page css */
+
+.admin-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+   background: linear-gradient(135deg, #07b7ec, #764ba2);
+  
+  padding: 20px;
+}
+
+.admin-box {
+  width: 100%;
+  max-width: 700px;
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+
+.admin-title {
+  font-size: 32px;
+  font-weight: bold;
+  color: #212529;
+  margin-bottom: 20px;
+}
+
+.admin-text {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #555;
+}
+
+.bold {
+  color: #0d6efd;
+  font-weight: 600;
+}
+
+

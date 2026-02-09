@@ -1,0 +1,30 @@
+
+<div class="employee-page">
+  <div class="employee-card">
+    <h2>Employee List</h2>
+
+    <div class="table-wrapper">
+      <table>
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Password</th>
+            <th>Role</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr *ngFor="let emp of employees">
+            <td>{{ emp.eid }}</td>
+            <td>{{ emp.ename }}</td>
+            <td>{{ emp.eemail }}</td>
+            <td>{{ emp.epassword }}</td>
+            <td>{{ emp.role }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

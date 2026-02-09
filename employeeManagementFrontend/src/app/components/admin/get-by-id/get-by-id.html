@@ -1,0 +1,39 @@
+
+<div class="getbyid-box">
+
+  <h3>Get Employee By ID</h3>
+
+  <!-- Small Search -->
+  <div class="search-row">
+    <input
+      type="number"
+      [(ngModel)]="eId"
+      placeholder="Enter ID"
+    />
+    <button (click)="getEmployee()">Search</button>
+  </div>
+
+  <!-- Table Result -->
+  <table *ngIf="employee?.eid">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Email</th>
+      <th>Password</th>
+      <th>Role</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>{{ employee.eid }}</td>
+      <td>{{ employee.ename }}</td>
+      <td>{{ employee.eemail }}</td>
+      <td>{{ employee.epassword}}</td>
+      <td>{{ employee.role }}</td>
+    </tr>
+  </tbody>
+</table>
+
+
+</div>

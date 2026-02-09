@@ -1,0 +1,62 @@
+
+<div class="update-container">
+  <div class="update-card">
+    <h2>Update Employee</h2>
+    <p>Please update employee details</p>
+
+    <form (ngSubmit)="updateEmployee()">
+
+      <div class="form-group">
+        <input
+          type="number"
+          placeholder="Employee ID"
+          required
+          [(ngModel)]="employee.eid"
+          name="id"
+        />
+      </div>
+
+      <div class="form-group">
+        <input
+          type="text"
+          placeholder="Employee Name"
+          required
+          [(ngModel)]="employee.ename"
+          name="name"
+        />
+      </div>
+
+      <div class="form-group">
+        <input
+          type="email"
+          placeholder="Employee Email"
+          required
+          [(ngModel)]="employee.eemail"
+          name="email"
+        />
+      </div>
+
+      <div class="form-group">
+        <input
+          type="password"
+          placeholder="Password"
+          required
+          [(ngModel)]="employee.epassword"
+          name="password"
+        />
+      </div>
+
+      <div class="form-group">
+        <input
+          type="text"
+          placeholder="Employee Role"
+          required
+          [(ngModel)]="employee.role"
+          name="role"
+        />
+      </div>
+
+      <button type="submit" class="update-btn">Update</button>
+    </form>
+  </div>
+</div>

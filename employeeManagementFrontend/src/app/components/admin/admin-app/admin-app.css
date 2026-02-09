@@ -1,0 +1,18 @@
+.admin-layout {
+  display: flex;          /* 🔥 MAIN FIX */
+  height: 100vh;
+}
+
+/* Sidebar container */
+.sidebar-wrapper {
+  width: 280px;
+  flex-shrink: 0;
+}
+
+/* Right side content */
+.admin-page {
+  flex: 1;
+  padding: 20px;
+  background-color: #f5f6fa;
+  overflow-y: auto;
+}

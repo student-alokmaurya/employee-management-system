@@ -1,0 +1,54 @@
+.getbyid-box {
+  width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+
+.getbyid-box h3 {
+  margin-bottom: 15px;
+  color: #333;
+}
+
+/* Small search row */
+.search-row {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 15px;
+}
+
+.search-row input {
+  width: 120px;
+  padding: 6px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.search-row button {
+  padding: 6px 12px;
+  border: none;
+  background: #0d6efd;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+table th,
+table td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: left;
+  font-size: 14px;
+}
+
+table th {
+  background: #f2f2f2;
+}

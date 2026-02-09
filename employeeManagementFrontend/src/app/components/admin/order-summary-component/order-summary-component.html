@@ -1,0 +1,46 @@
+<div class="order-form-card">
+  <h3>Place Order</h3>
+
+  <input type="email"
+         placeholder="Customer Email"
+         [(ngModel)]="order.customerEmail"
+         name="customerEmail">
+
+  <input type="number"
+         placeholder="Total Amount"
+         [(ngModel)]="order.totalAmount"
+         name="totalAmount">
+
+  <button (click)="placeOrder()">Place Order</button>
+</div>
+
+
+<br>
+<hr>
+<div class="order-container" *ngIf="summary">
+  <div class="order-card">
+    <div class="success-icon">✔</div>
+
+    <h2>Order Successful</h2>
+    <p class="sub-text">Thank you! Your order has been placed successfully.</p>
+
+    <div class="order-details">
+      <div class="detail-row">
+        <span>Order ID</span>
+        <strong>#{{ summary.orderId }}</strong>
+      </div>
+
+      <div class="detail-row">
+        <span>Amount Paid</span>
+        <strong>₹ {{ summary.totalAmount }}</strong>
+      </div>
+
+      <div class="detail-row">
+        <span>Payment Status</span>
+        <strong class="status-success">
+          {{ summary.paymentStatus }}
+        </strong>
+      </div>
+    </div>
+  </div>
+</div>
